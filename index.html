@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <script src = "script.js"></script>
+    <link rel = "stylesheet" href = "design.css">
+</head>
+<body>
+
+<h1>Grade Calculator</h1>
+<h4 id="subtitle">What grade do you need on your final exam to succeed in a class?</h4>
+
+<div class="instructions">Input your desired percentage grade in the class and the percentage weight of your final exam.</div>
+
+<table class="chart" style="width: 30%" align = "center" border="2">
+    <tr>
+        <th>Desired Grade</th>
+        <th>Weight of Final Exam</th>
+    <tr>
+
+    <tr>
+        <td>
+            <input id="desiredGrade" placeholder="Desired Grade (%)" class = "input" value= "90">
+        </td>
+
+        <td>
+            <input id="finalExamWeight" placeholder="Weight of Final Exam (%)" class = "input" value="10">
+        </td>
+    </tr>
+</table>
+
+<div class="instructions">Input your current percentage grade for each assignment in each category. Separate numbers with a comma and a space.</div>
+<div class="instructions">Then, input the percentage weights for each category.</div>
+
+<div id="errorMessage"></div>
+
+<table class="chart" style="width: 75%" align="center">
+    <tr>
+        <th>Category</th>
+        <th>Current Grades</th>
+        <th>Weights</th>
+    </tr>
+    <tr>
+        <td>Homework</td>
+        <td>
+            <input class = "grades" id="hwGrd" value="85, 88, 94">
+        </td>
+        <td>
+            <input class = "weights" id="hwWt" value="10">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Classwork</td>
+        <td>
+            <input class = "grades" id="cwGrd" value="85, 88, 94">
+        </td>
+        <td>
+            <input class = "weights" id="cwWt" value="20">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Tests</td>
+        <td>
+            <input class = "grades" id="ttGrd" value="85, 88, 94">
+        </td>
+        <td>
+            <input class = "weights" id="ttWt" value="20">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Participation</td>
+        <td>
+            <input class = "grades" id="ptGrd" value="85, 88, 94">
+        </td>
+        <td>
+            <input class = "weights" id="ptWt" value="20">
+        </td>
+    </tr>
+
+    <tr>
+        <td>Projects</td>
+        <td>
+            <input class = "grades" id="pjGrd" value="85, 88, 94">
+        </td>
+        <td>
+            <input class = "weights" id="pjWt" value="20">
+        </td>
+    </tr>
+</table>
+
+<button id="relTest" class="clicker" onClick = "currentOnClick()">Calculate Current Grade</button>
+
+<div id = "currentGrade"></div>
+
+<button class="clicker" onClick = "necessaryOnClick()">Calculate Final Exam Grade Needed</button>
+
+<div id = "necessaryGrade"></div>
+
+</body>
+</html>

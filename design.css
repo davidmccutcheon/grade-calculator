@@ -1,0 +1,45 @@
+body {
+    background-color: firebrick;
+    vertical-align: middle;
+    text-align: center;
+    font-family: "Baskerville Old Face";
+    color: gainsboro;
+}
+
+button {
+    background-color: darkorange;
+}
+
+.instructions {
+    padding: 1%;
+}
+
+.chart {
+    padding: 10px;
+    border: dotted;
+}
+
+#subtitle {
+    position: relative;
+    bottom: 15px;
+}
+
+h1 {
+    color: white;
+}
+
+.input {
+    font-family: "American Typewriter";
+}
+
+.grades, .weights {
+    font-family: "American Typewriter";
+}
+
+#currentGrade, #necessaryGrade {
+    padding: 10px;
+}
+
+#relTest {
+    position: relative;
+}
